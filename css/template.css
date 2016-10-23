@@ -1,0 +1,140 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+a {
+	color:#d3b581; /* GOLD color */
+	text-decoration:none;
+}
+
+html{
+	font-size:10px;
+}
+
+body, header, main, footer{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:100%;
+	}
+
+body{
+	font-size:1.6rem;
+	min-height:100vh;
+	background-color:#f1f1f1;
+}
+
+header{
+	background-color:white
+	}
+
+main {
+	padding-top:1rem;
+	flex: 1 0 auto;
+}
+
+.container{
+	width:100%;
+}
+
+.logo {
+	width:20rem;
+	height:20rem;
+	overflow:hidden;
+	border: 1rem solid #d3b581;
+	border-radius:20rem;
+	background-color:#fff;
+	margin: 0 auto 0 auto;
+}
+
+.logo, .logo a{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.logo a{
+	height:100%;
+}
+
+.logo a, .logo img {
+	width:95%;
+	}
+
+.menu{
+	list-style-type:none;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	-webkit-transition: height 0.3s ease-in;
+	-moz-transition: height 0.3s ease-in;
+	-ms-transition: height 0.3s ease-in;
+	-o-transition: height 0.3s ease-in;
+	transition: height 0.3s ease-in;
+	height:0;
+	overflow:hidden;
+	}
+
+.menu li {
+	padding:2rem;
+	text-align:center;
+	}
+
+.menu li a{
+	font-size:2rem;
+	line-height:1rem;
+	}
+
+.menu li.active {
+	background-color:#d3b581;
+	}
+
+.menu li.active a {
+	color:white;
+	}
+
+.menu li a {
+	height:100%;
+	width:100%;
+}
+
+#mobile-menu-toggle{
+	display:none;	
+	}
+
+#mobile-menu-toggle + label{
+	color:#d3b581;
+}
+
+#mobile-menu-toggle:checked + label{
+	color:#726246;
+}
+
+#mobile-menu-toggle:checked + label + .menu{
+	height:80vh;
+}
+
+label[for=mobile-menu-toggle]{
+	display:block;
+	cursor: pointer;
+	padding:2rem;
+	text-align:right;
+}
+
+.fa-bars{
+	font-size:3rem;
+	}
+
+@media ( min-width:560px ) and ( max-width:767px ) {}
+@media ( min-width:768px ) {
+	#mobile-menu-toggle:checked + label + .menu,
+	.menu{flex-direction:row;height:auto;}
+	label[for=mobile-menu-toggle]{display:none;}
+	}
+@media ( min-width:768px ) and ( max-width:991px ) {}
+@media ( min-width:992px ) and ( max-width:1200px ) {}
+@media ( min-width:1200px ) {
+	.container{width:75%;}
+	}
+

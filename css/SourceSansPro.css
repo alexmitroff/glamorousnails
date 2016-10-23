@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'SourceSansPro Regular';
+  src: url('../fonts/SourceSansPro/SourceSansPro-Regular.otf') format('opentype');
+}
+
+body{
+	font-family:SourceSansPro Regular;
+}

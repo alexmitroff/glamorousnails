@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template" client="site">
+	<name>Glamorous Nail Template</name>
+	<creationDate>2016-10-20</creationDate>
+	<author>Tatiana Ermolova and Aleksei Mitrofanov</author>
+	<authorEmail>alexmitroff@gmail.com</authorEmail>
+	<authorUrl>https://vk.com/id28345</authorUrl>
+	<copyright>Tatiana Ermolova and Aleksei Mitrofanov 2016</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Joomla template for glam-nails.ru</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>font-awesome</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>global-menu</position>
+		<position>brand</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</extension>
