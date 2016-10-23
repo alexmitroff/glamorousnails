@@ -5,5 +5,6 @@
 <h2>Dependencies</h2>
 <ul>
   <li><a href="http://fontawesome.io/">Font Awesome</a></li>
+  <li><a href="https://github.com/adobe-fonts/source-sans-pro">Source Sans Pro</a></li>
   <li><a href="https://necolas.github.io/normalize.css/">Normalize.css</a></li>
 </ul>
