@@ -6,25 +6,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<jdoc:include type="head" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/normalize.css" type="text/css" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/SourceSansPro.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/fonts/SourceSansPro/source-sans-pro.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/font-awesome/css/font-awesome.min.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
 	</head>
 	<body>
 		<header>
 			<nav class="container">
+				<jdoc:include type="modules" name="header-contacts" />			
+				<div class="separator"></div>	
 				<input type="checkbox" id="mobile-menu-toggle">
 				<label for="mobile-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></label>
 				<jdoc:include type="modules" name="global-menu" />				
 			</nav>
 		</header>
 		<main>
-			<jdoc:include type="modules" name="logo" />
-			<jdoc:include type="modules" name="top" /> 
-			<jdoc:include type="component" />
+			<div class="container">
+				<jdoc:include type="modules" name="logo" />
+				<jdoc:include type="modules" name="feature" /> 
+				<jdoc:include type="component" />
+			</div>
 		</main>
 		<footer>
-			<jdoc:include type="modules" name="footer1" />
+			<div class="container">
+				<jdoc:include type="modules" name="footer" />
+			</div>
 		</footer>
 	</body>
 </html>

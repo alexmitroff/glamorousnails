@@ -17,10 +17,11 @@
 		<folder>font-awesome</folder>
 	</files>
 	<positions>
+		<position>header-contacts</position>
 		<position>breadcrumb</position>
 		<position>global-menu</position>
 		<position>brand</position>
-		<position>top</position>
+		<position>feature</position>
 		<position>user1</position>
 		<position>user2</position>
 		<position>user3</position>
