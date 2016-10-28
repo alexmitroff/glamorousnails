@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/normalize.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/fonts/SourceSansPro/source-sans-pro.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/font-awesome/css/font-awesome.min.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/slick/slick-theme.css"/>
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
 	</head>
 	<body>
@@ -31,8 +33,30 @@
 		</main>
 		<footer>
 			<div class="container">
-				<jdoc:include type="modules" name="footer" />
+				<section class="sub">
+					<h3>Подпишитесь на&nbsp;новости</h3>
+					<p>и&nbsp;получайте информацию о&nbsp;наших акциях и&nbsp;специальных предложениях</p>
+					<jdoc:include type="modules" name="footer-subcribe" />
+				</section>
+				<section class="copyright">
+					<p>Сделано c <i class="fa fa-heart" aria-hidden="true"></i> в Москве © 2014</p>
+					<p><img src="images/logo-m.jpg" alt="glan-nails.ru" /></p>
+				</section>
+				<section>
+					<jdoc:include type="modules" name="footer" />
+				</section>
 			</div>
 		</footer>
 	</body>
+	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/slick/slick.min.js"></script>
+	<script type="text/javascript">
+	jQuery(function($) {
+		$(document).ready(function(){
+  			$('.promo').slick({
+				autoplay: true,
+				arrows:false,
+				});
+			});
+	});
+	</script>
 </html>

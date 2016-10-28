@@ -27,6 +27,7 @@
 		<position>user2</position>
 		<position>user3</position>
 		<position>subcribe</position>
+		<position>footer-subcribe</position>
 		<position>footer</position>
 	</positions>
 </extension>
