@@ -22,10 +22,11 @@
 		<position>global-menu</position>
 		<position>brand</position>
 		<position>feature</position>
+		<position>promo</position>
 		<position>user1</position>
 		<position>user2</position>
 		<position>user3</position>
-		<position>user4</position>
+		<position>subcribe</position>
 		<position>footer</position>
 	</positions>
 </extension>

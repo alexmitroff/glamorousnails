@@ -22,9 +22,11 @@
 		</header>
 		<main>
 			<div class="container">
+				<jdoc:include type="modules" name="promo" /> 
 				<jdoc:include type="modules" name="logo" />
 				<jdoc:include type="modules" name="feature" /> 
 				<jdoc:include type="component" />
+				<jdoc:include type="modules" name="subcribe" /> 
 			</div>
 		</main>
 		<footer>
