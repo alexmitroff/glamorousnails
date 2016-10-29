@@ -23,8 +23,8 @@
 			</nav>
 		</header>
 		<main>
+			<jdoc:include type="modules" name="promo" /> 
 			<div class="container">
-				<jdoc:include type="modules" name="promo" /> 
 				<jdoc:include type="modules" name="logo" />
 				<jdoc:include type="modules" name="feature" /> 
 				<jdoc:include type="component" />
@@ -39,8 +39,8 @@
 					<jdoc:include type="modules" name="footer-subcribe" />
 				</section>
 				<section class="copyright">
-					<p>Сделано c <i class="fa fa-heart" aria-hidden="true"></i> в Москве © 2014</p>
 					<p><img src="images/logo-m.jpg" alt="glan-nails.ru" /></p>
+					<p>Сделано c <i class="fa fa-heart" aria-hidden="true"></i> в Москве © 2014</p>
 				</section>
 				<section>
 					<jdoc:include type="modules" name="footer" />

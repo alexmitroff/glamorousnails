@@ -1,6 +1,7 @@
-{
+*{
 	margin:0;
 	padding:0;
+	box-sizing:border-box;
 }
 
 a, li, label, input{
@@ -11,6 +12,7 @@ a, li, label, input{
 transition: all 0.2s ease-in;
 }
 
+.glam-red,
 a {
 	color:#B03841;
 	text-decoration:none;
@@ -82,7 +84,6 @@ footer p i {
 
 footer section {
 	padding:1rem;
-	box-sizing:border-box;
 	width:100%;
 }
 
@@ -110,6 +111,7 @@ footer section {
 .container{
 	width:100%;
 	background-color:white;
+	margin: 0 auto 0 auto;
 }
 
 .custom_logo{
@@ -170,7 +172,7 @@ footer section {
 
 .menu li {
 	text-align:center;
-	border-bottom:.2rem solid white;
+	border-bottom:.4rem double white;
 	}
 
 .menu li:hover {
@@ -235,9 +237,33 @@ label[for=mobile-menu-toggle]{
 	box-sizing:border-box;
 }
 
-.promo img{
+
+.custom_promo{
 	width:100%;
 }
+
+.promo-item {
+	overflow:hidden;
+	width: 100%;
+	height:55rem;
+	background-position: center center;
+	background-size: cover;
+	background-repeat:no-repeat;
+	}
+
+.promo .container{
+	background:none;
+	margin:0 auto 0 auto;
+	padding:4rem 4rem 4rem 4rem;
+	}
+
+.promo .container p,
+.promo .container h3{background-color:rgba(255,255,255,.5);}
+
+
+.promo img{
+	width:100%;
+	}
 
 .slide div{
 	padding:4rem 2rem 6rem 2rem;
@@ -253,15 +279,34 @@ footer h3,
 	margin-top:1rem;
 	margin-bottom:2rem;
 	color:#d3b581;
+	font-weight:normal;
 }
 
 footer p,
+.promo p,
 .feature div,
 .custom_subup p,
 .TzModFeature_service li p,
 .slide p {
 	color:#726246;
 	}
+
+.promo h3{
+	padding:2rem;
+	font-size:4rem;
+	font-weight: lighter;
+	color:#444;
+}
+
+.promo p{
+	padding:2rem;
+	padding-bottom:3rem;
+	font-size:2rem;
+}
+
+.promo-button{
+	text-align:left;
+}
 
 .feature span {
 	height:3rem;
@@ -271,8 +316,12 @@ footer p,
 
 .studio-glamnails{
 	background-image: url('/images/studio/glamnails.jpg');
+	margin-bottom:5rem;
 }
 
+.studio-glamnails > div{
+	background-color:white
+}
 
 .feature ul{
 	list-style-type:circle;
@@ -383,6 +432,7 @@ form div{
 	color:#008000;
 }
 
+.btn,
 input[type=button]{
 	background-color:#B03841;
 	border-color:#B03841;
@@ -390,6 +440,16 @@ input[type=button]{
 	cursor:pointer;
 }
 
+.btn{
+	position:relative;
+	z-index:500;
+	padding:1rem;
+	border-radius:.4rem;
+	text-align:right;
+}
+
+.btn:hover,
+.promo-button .btn:hover,
 input[type=button]:hover{
 	background-color: #d3b581;
 	border-color: #d3b581;
@@ -397,19 +457,34 @@ input[type=button]:hover{
 	cursor:pointer;
 }
 
+.promo-button .btn{
+	background:none;
+	color: #B03841;
+	border:.1rem solid #B03841;
+	font-weight:lighter;
+}
+
+
 .item-page{
 	padding:1rem;
 }
 
-@media ( min-width:560px ) and ( max-width:767px ) {}
+@media ( min-width:560px ) and ( max-width:767px ) {
+	.promo .container{padding-right:20rem;padding-top:4rem;}
+	.promo .container p,
+	.promo .container h3{background-color:rgba(255,255,255,.5);}
+	}
+
 @media ( min-width:768px ) {
 	form input {width:48%;}
 	#mobile-menu-toggle:checked + label + .menu,
-	.menu{flex-direction:row;height:auto;}
+	.menu{flex-direction:row;height:auto;padding-top:1rem;padding-bottom:1rem;}
 	label[for=mobile-menu-toggle]{display:none;}
 	.menu li.active {background-color:white;}
 	.menu li.active a {color:#d3b581;}
+	.promo .container{padding-right:40rem;padding-top:10rem;}
 	}
+
 @media ( min-width:768px ) and ( max-width:991px ) {
 	.slide div {margin-bottom:5rem;}
 	.custom_subup,
@@ -420,7 +495,9 @@ input[type=button]:hover{
 	#jnews_module2{margin-top:0;}
 	.TzModFeature_service li{width:48%;}
 	footer section{width: 33%}
+	.promo-item{height:50rem;}
 	}
+
 @media ( min-width:992px ) and ( max-width:1200px ) {
 	.slide div {width:80%;margin-bottom:10rem;}
 	.custom_subup,
@@ -431,7 +508,9 @@ input[type=button]:hover{
 	#jnews_module2{margin-top:0;}
 	.TzModFeature_service li{width:24%;}
 	footer section{width: 33%}
+	.promo-item{height:80rem;}
 	}
+
 @media ( min-width:1200px ) {
 	.container{width:100rem;}
 	.slide div {width:60%;margin-bottom:20rem;}
@@ -443,6 +522,7 @@ input[type=button]:hover{
 	#jnews_module2{margin-top:0;}
 	.TzModFeature_service li {width:24%;}
 	footer section{width: 33%}
+	.promo-item{height:80rem;}
 	}
 
 
