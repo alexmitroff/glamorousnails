@@ -469,6 +469,7 @@ input[type=button]:hover{
 	padding:1rem;
 }
 
+
 @media ( min-width:560px ) and ( max-width:767px ) {
 	.promo .container{padding-right:20rem;padding-top:4rem;}
 	.promo .container p,

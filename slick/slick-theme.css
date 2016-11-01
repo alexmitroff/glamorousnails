@@ -21,14 +21,14 @@
 {
     font-size: 0;
     line-height: 0;
-
+    z-index:1000;
     position: absolute;
-    top: 50%;
+    top: 45%;
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 5rem;
+    height: 5rem;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -37,7 +37,8 @@
     cursor: pointer;
 
     color: transparent;
-    border: none;
+    border:none;
+    border-bottom:.2rem solid rgba(255,255,255, .8);
     outline: none;
     background: transparent;
 }
@@ -49,6 +50,7 @@
     color: transparent;
     outline: none;
     background: transparent;
+    border-color:white;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -67,7 +69,7 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1;
 
     opacity: .75;
@@ -79,38 +81,42 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 2.5rem;
+    border-left:.2rem solid rgba(255,255,255, .8);
+    transform: rotate(45deg);
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 2.5rem;
     left: auto;
 }
 .slick-prev:before
 {
-    content: '←';
+   /* content: '←';*/
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+   /* content: '→';*/
 }
 
 .slick-next
 {
-    right: -25px;
+    right: 2.5rem;
+    border-right:.2rem solid rgba(255,255,255, .8);
+    transform: rotate(-45deg);
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 2.5rem;
 }
 .slick-next:before
 {
-    content: '→';
+   /* content: '→';*/
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+   /* content: '←'; */
 }
 
 /* Dots */
