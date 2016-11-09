@@ -280,6 +280,20 @@ label[for=mobile-menu-toggle]{
 	background-color:white;
 }
 
+.special {
+	width:90%;
+	margin: 0 auto 4rem auto;
+	min-height:10rem;
+	height:auto;
+}
+
+.special-body{
+	background-color: rgba(255,255,255,.8);
+	width:100%;
+	height:100%;
+	padding-bottom:4rem;	
+}
+
 footer h3,
 .custom_subup h3,
 .feature h3,
@@ -290,6 +304,7 @@ footer h3,
 	font-weight:normal;
 }
 
+.special-body p,
 footer p,
 .promo p,
 .feature div,
@@ -299,6 +314,7 @@ footer p,
 	color:#726246;
 	}
 
+.special-body h3,
 .promo h3{
 	padding:2rem;
 	font-size:4rem;
@@ -306,6 +322,7 @@ footer p,
 	color:#444;
 }
 
+.special-body p,
 .promo p{
 	padding:2rem;
 	padding-bottom:3rem;
@@ -493,6 +510,7 @@ input[type=button]:hover{
 	.menu li.active a {color:#d3b581;}
 	.promo .container{padding-right:40rem;padding-top:10rem;}
 	.header-contacts{background-image:url('/images/logo-mini.png');	background-position: 3rem center;background-size: 6rem;	background-repeat:no-repeat;}
+	.special-body{width:50%;}
 	}
 
 @media ( min-width:768px ) and ( max-width:991px ) {
