@@ -54,7 +54,7 @@
 		$(document).ready(function(){
   			$('.promo').slick({
 				autoplay: true,
-				arrows:true,
+				arrows:false,
 				dots:true,
 				});
 			});
