@@ -71,6 +71,13 @@ footer .sub p {
 	text-align:left;
 }
 
+footer .book{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
 footer img{
 	width:60%;
 	}
@@ -497,6 +504,7 @@ input[type=button]:hover{
 	.TzModFeature_service li{width:48%;}
 	footer section{width: 33%}
 	.promo-item{height:50rem;}
+	.slick-dots{margin-top:-12rem;}
 	}
 
 @media ( min-width:992px ) and ( max-width:1200px ) {
@@ -510,6 +518,7 @@ input[type=button]:hover{
 	.TzModFeature_service li{width:24%;}
 	footer section{width: 33%}
 	.promo-item{height:80rem;}
+	.slick-dots{margin-top:-17rem;}
 	}
 
 @media ( min-width:1200px ) {
@@ -524,6 +533,7 @@ input[type=button]:hover{
 	.TzModFeature_service li {width:24%;}
 	footer section{width: 33%}
 	.promo-item{height:80rem;}
+	.slick-dots{margin-top:-17rem;}
 	}
 
 

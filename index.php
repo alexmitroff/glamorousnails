@@ -42,7 +42,7 @@
 					<p><img src="images/logo-m.jpg" alt="glan-nails.ru" /></p>
 					<p>Сделано c <i class="fa fa-heart" aria-hidden="true"></i> в Москве © 2014</p>
 				</section>
-				<section>
+				<section class="book">
 					<jdoc:include type="modules" name="footer" />
 				</section>
 			</div>
@@ -55,6 +55,7 @@
   			$('.promo').slick({
 				autoplay: true,
 				arrows:true,
+				dots:true,
 				});
 			});
 	});
