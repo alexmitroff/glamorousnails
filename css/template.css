@@ -25,6 +25,7 @@ a:hover{
 html{
 	font-size:10px;
 	font-family: Source Sans Pro;
+	color:#726246;
 }
 
 body, header, main, footer{
@@ -119,6 +120,7 @@ footer section {
 	width:100%;
 	background-color:white;
 	margin: 0 auto 0 auto;
+	height:100%;
 }
 
 .custom_logo{
@@ -287,6 +289,10 @@ label[for=mobile-menu-toggle]{
 	height:auto;
 }
 
+.special:first-child{
+	margin-top:4rem;
+}
+
 .special-body{
 	background-color: rgba(255,255,255,.8);
 	width:100%;
@@ -294,6 +300,11 @@ label[for=mobile-menu-toggle]{
 	padding-bottom:4rem;	
 }
 
+.insta img{
+	width:6rem;
+}
+
+.insta h3,
 footer h3,
 .custom_subup h3,
 .feature h3,
@@ -428,6 +439,14 @@ footer p,
 	padding-top:1rem;
 }
 
+.insta * {
+	text-align:center;
+}
+
+.insta p {
+	margin-bottom:1rem;
+}
+
 form {
 	display:flex;
 	flex-direction:row;
@@ -494,11 +513,51 @@ input[type=button]:hover{
 	padding:1rem;
 }
 
+.item-page,
+.item-page > div{
+	height:100%;
+}
+
+
+
+.portfolio-nav,
+.portfolio{
+	width:100%;
+	margin-top:2rem;
+}
+
+.portfolio-item{
+	display:block;
+	position:relative;
+	width:100%;
+	height: auto;
+}
+
+.portfolio-item-image,
+.portfolio-nav-item{
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.portfolio-nav-item{
+	height: 10rem;
+	border-left:1rem solid white;
+}	
+.portfolio-item-image{
+		display:block;
+		position:relative;
+		width:100%;
+		height:auto;
+		padding-top:100%;
+		margin: 0 auto 0 auto;
+		border:1rem solid #d3b581;
+	}
 
 @media ( min-width:560px ) and ( max-width:767px ) {
 	.promo .container{padding-right:20rem;padding-top:4rem;}
 	.promo .container p,
 	.promo .container h3{background-color:rgba(255,255,255,.5);}
+	.portfolio-item-image {width:54rem; padding-top:0; height:54rem;}
 	}
 
 @media ( min-width:768px ) {
@@ -511,6 +570,7 @@ input[type=button]:hover{
 	.promo .container{padding-right:40rem;padding-top:10rem;}
 	.header-contacts{background-image:url('/images/logo-mini.png');	background-position: 3rem center;background-size: 6rem;	background-repeat:no-repeat;}
 	.special-body{width:50%;}
+	.portfolio-item-image {width:54rem; padding-top:0; height:54rem;}
 	}
 
 @media ( min-width:768px ) and ( max-width:991px ) {
@@ -556,4 +616,4 @@ input[type=button]:hover{
 	.slick-dots{margin-top:-17rem;}
 	}
 
-
+.customheading{display:none;}

@@ -58,6 +58,45 @@
 				dots:true,
 				});
 			});
+			$('.portfolio').slick({
+				autoplay: false,
+				arrows:true,
+				dots:false,
+				fade:true,
+				asNavFor: '.portfolio-nav',
+				responsive:[
+					{
+						breakpoint: 767,
+						settings:{
+							arrows:false,
+						}
+					},
+				],
+			});
+			$('.portfolio-nav').slick({
+				slidesToShow: 5,
+  				slidesToScroll: 1,
+  				asNavFor: '.portfolio',
+  				centerMode: true,
+  				focusOnSelect: true,
+				autoplay: true,
+				arrows:false,
+				dots:false,
+				responsive:[
+					{
+						breakpoint: 767,
+						settings:{
+							slidesToShow: 3,
+						}
+					},
+					{
+						breakpoint: 559,
+						settings:{
+							slidesToShow: 2,
+						}
+					},
+				],
+			});
 	});
 	</script>
 </html>
