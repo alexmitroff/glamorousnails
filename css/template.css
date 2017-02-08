@@ -129,12 +129,14 @@ footer section {
 	margin-top:-3rem;
 	margin-bottom:-3rem;
 	}
+
 .custom_subup,
 #jnews_module2,
 .golden-box, .logo{
 	border: 1rem solid #d3b581;
 	margin: 0 auto 0 auto;
 	}
+
 .custom_subup,
 #jnews_module2,
 .golden-box{
@@ -514,11 +516,9 @@ input[type=button]:hover{
 }
 
 .item-page,
-.item-page > div{
+.item-page > div:not(.page-header){
 	height:100%;
 }
-
-
 
 .portfolio-nav,
 .portfolio{
@@ -553,11 +553,50 @@ input[type=button]:hover{
 		border:1rem solid #d3b581;
 	}
 
+.service{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    height:100%;
+}
+
+.service > a{
+    width:49%;    
+}
+
+.service p {
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.service-item{
+    width:100%;
+    padding:1rem;
+}
+
+.service-image-wrapper{
+    width:100%;
+    padding-bottom:2rem;
+}
+
+.service-image{
+    padding-top:100%;
+    background-color:#ccc;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.service > a:hover .service-image{
+    border-color:#d3b581;
+}
+
 @media ( min-width:560px ) and ( max-width:767px ) {
 	.promo .container{padding-right:20rem;padding-top:4rem;}
 	.promo .container p,
 	.promo .container h3{background-color:rgba(255,255,255,.5);}
 	.portfolio-item-image {width:54rem; padding-top:0; height:54rem;}
+    .service > a{width:32%;}
 	}
 
 @media ( min-width:768px ) {
@@ -571,6 +610,7 @@ input[type=button]:hover{
 	.header-contacts{background-image:url('/images/logo-mini.png');	background-position: 3rem center;background-size: 6rem;	background-repeat:no-repeat;}
 	.special-body{width:50%;}
 	.portfolio-item-image {width:54rem; padding-top:0; height:54rem;}
+    .service > a{width:24%;}
 	}
 
 @media ( min-width:768px ) and ( max-width:991px ) {
