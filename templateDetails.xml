@@ -29,5 +29,6 @@
 		<position>subcribe</position>
 		<position>footer-subcribe</position>
 		<position>footer</position>
+		<position>modals</position>
 	</positions>
 </extension>

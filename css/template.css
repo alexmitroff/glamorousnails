@@ -4,7 +4,7 @@
 	box-sizing:border-box;
 }
 
-a, li, label, input{
+.service-image, a, li, label, input{
 -webkit-transition: all 0.2s ease-in;
 -moz-transition: all 0.2s ease-in;
 -ms-transition: all 0.2s ease-in;
@@ -562,7 +562,8 @@ input[type=button]:hover{
 }
 
 .service > a{
-    width:49%;    
+    width:49%;
+    background-color:white;    
 }
 
 .service p {
@@ -585,10 +586,47 @@ input[type=button]:hover{
     background-color:#ccc;
     border-radius:50%;
     overflow:hidden;
+    opacity:.6;
 }
 
 .service > a:hover .service-image{
+    opacity:1;
     border-color:#d3b581;
+}
+
+.modal{
+    display: none;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 2000;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(211,181,129,.5), rgba(211,181,129,0));
+}
+
+.modal-lock {
+    overflow: hidden;
+}
+
+.modal-container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100vh;
+}
+
+.modal-body{
+    background-color:white;
+    padding:1rem;
+}
+
+footer + div{
+    display:fixed;
+    width:100vw;
 }
 
 @media ( min-width:560px ) and ( max-width:767px ) {
@@ -611,6 +649,7 @@ input[type=button]:hover{
 	.special-body{width:50%;}
 	.portfolio-item-image {width:54rem; padding-top:0; height:54rem;}
     .service > a{width:24%;}
+    .modal-container{width:768px; margin: 0 auto 0 auto;}
 	}
 
 @media ( min-width:768px ) and ( max-width:991px ) {

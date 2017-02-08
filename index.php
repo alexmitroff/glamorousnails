@@ -47,17 +47,32 @@
 				</section>
 			</div>
 		</footer>
+		<jdoc:include type="modules" name="modals" />
 	</body>
 	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/slick/slick.min.js"></script>
-	<script type="text/javascript">
+    <script type="text/javascript">
+
 	jQuery(function($) {
+
+        function hideModal(){
+            $("body").removeClass("modal-lock");
+            $(".modal").fadeOut();
+        }
+
+        function showModal(id){
+            hideModal();
+            $("body").addClass("modal-lock");
+            $(id).fadeIn();
+        }
+
 		$(document).ready(function(){
-  			$('.promo').slick({
+
+            $('.promo').slick({
 				autoplay: true,
 				arrows:false,
 				dots:true,
-				});
 			});
+
 			$('.portfolio').slick({
 				autoplay: false,
 				arrows:true,
@@ -73,7 +88,8 @@
 					},
 				],
 			});
-			$('.portfolio-nav').slick({
+            
+            $('.portfolio-nav').slick({
 				slidesToShow: 5,
   				slidesToScroll: 1,
   				asNavFor: '.portfolio',
@@ -96,7 +112,27 @@
 						}
 					},
 				],
-			});
+            });
+
+
+            $(".modal").click(function(){
+                hideModal();
+            });
+
+            $("[role=modal] div").click(function(e){
+                e.stopPropagation();
+                return false;
+            });
+            
+            $("a[role=show-modal] div").click(function(){
+                console.log($(this));
+                showModal($(this).data("target"));
+            });
+            
+            $("[role=modal-close]").click(function(){
+                hideModal();
+            });
 	});
+});
 	</script>
 </html>
