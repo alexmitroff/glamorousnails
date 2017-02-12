@@ -589,6 +589,41 @@ input[type=button]:hover{
     opacity:.6;
 }
 
+.service-panel{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+}
+
+.service-panel > div{
+    width:100%;
+}
+
+.service-panel ul {
+    list-style:none;
+}
+
+.service-panel h3{
+    margin-top:2rem;
+    margin-bottom:1rem;
+}
+
+.service-panel ul li{
+    display:flex;
+    justify-content:space-between;
+    padding:.5rem;
+}
+
+.service-panel ul li:nth-child(odd){
+    background-color:#eee;
+}
+
+.service-panel ul li span:last-child:after{
+    content: "\00a0руб.";
+}
+
 .service > a:hover .service-image{
     opacity:1;
     border-color:#d3b581;
@@ -650,6 +685,7 @@ footer + div{
 	.portfolio-item-image {width:54rem; padding-top:0; height:54rem;}
     .service > a{width:24%;}
     .modal-container{width:768px; margin: 0 auto 0 auto;}
+    .service-panel > div{width:49%;}
 	}
 
 @media ( min-width:768px ) and ( max-width:991px ) {
