@@ -52,6 +52,257 @@
 	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/slick/slick.min.js"></script>
     <script type="text/javascript">
 
+    function initMap() {
+        var centermap = {lat: 55.6550293, lng: 37.7562537};
+        var mari = {lat: 55.6499008, lng: 37.7696935};
+        var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 15,
+                      center: mari,
+                      styles:[
+                            {
+                                    "elementType": "labels.icon",
+                                            "stylers": [
+                                                      {
+                                                                  "visibility": "on"
+                                                                            }
+                                        ]
+                                              },
+                                                    {
+                                                            "featureType": "administrative",
+                                                                    "stylers": [
+                                                                              {
+                                                                                          "visibility": "off"
+                                                                                                    }
+                                                                ]
+                                                                      },
+                                                                        {
+                                                                                "featureType": "landscape",
+                                                                                        "stylers": [
+                                                                                                  {
+                                                                                                              "color": "#ffffff"
+                                                                                                                        }
+                                                                                    ]
+                                                                                          },
+                                                                                            {
+                                                                                                    "featureType": "landscape.man_made",
+                                                                                                            "stylers": [
+                                                                                                                      {
+                                                                                                                                  "visibility": "off"
+                                                                                                                                            }
+                                                                                                        ]
+                                                                                                              },
+                                                                                                                {
+                                                                                                                        "featureType": "poi.attraction",
+                                                                                                                                "stylers": [
+                                                                                                                                          {
+                                                                                                                                                      "visibility": "off"
+                                                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                                  },
+                                                                                                                                    {
+                                                                                                                                            "featureType": "poi.business",
+                                                                                                                                                    "stylers": [
+                                                                                                                                                              {
+                                                                                                                                                                          "color": "#e5c48c"
+                                                                                                                                                                                    }
+                                                                                                                                                ]
+                                                                                                                                                      },
+                                                                                                                                                        {
+                                                                                                                                                                "featureType": "poi.business",
+                                                                                                                                                                        "elementType": "labels.icon",
+                                                                                                                                                                            "stylers": [
+                                                                                                                                                                                      {
+                                                                                                                                                                                                  "visibility": "on"
+                                                                                                                                                                                                            }
+                                                                                                                                                                    ]
+                                                                                                                                                                          },
+                                                                                                                                                                            {
+                                                                                                                                                                                    "featureType": "poi.business",
+                                                                                                                                                                                            "elementType": "labels.text.fill",
+                                                                                                                                                                                                "stylers": [
+                                                                                                                                                                                                          {
+                                                                                                                                                                                                                      "color": "#b03841"
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                        ]
+                                                                                                                                                                                              },
+                                                                                                                                                                                                {
+                                                                                                                                                                                                        "featureType": "poi.business",
+                                                                                                                                                                                                                "elementType": "labels.text.stroke",
+                                                                                                                                                                                                                    "stylers": [
+                                                                                                                                                                                                                              {
+                                                                                                                                                                                                                                          "color": "#ffffff"
+                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                  },
+                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                            "featureType": "poi.government",
+                                                                                                                                                                                                                                    "stylers": [
+                                                                                                                                                                                                                                              {
+                                                                                                                                                                                                                                                          "visibility": "off"
+                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                "featureType": "poi.medical",
+                                                                                                                                                                                                                                                        "stylers": [
+                                                                                                                                                                                                                                                                  {
+                                                                                                                                                                                                                                                                              "visibility": "off"
+                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                    "featureType": "poi.park",
+                                                                                                                                                                                                                                                                            "elementType": "geometry",
+                                                                                                                                                                                                                                                                                "stylers": [
+                                                                                                                                                                                                                                                                                          {
+                                                                                                                                                                                                                                                                                                      "color": "#e5e5e5"
+                                                                                                                                                                                                                                                                                                                }
+                          ]
+                                },
+                                  {
+                                          "featureType": "poi.park",
+                                                  "elementType": "labels.text.fill",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#888888"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "poi.place_of_worship",
+                                                  "stylers": [
+                                                            {
+                                                                        "visibility": "off"
+                                                                                  }
+                          ]
+                                },
+                                  {
+                                          "featureType": "poi.school",
+                                                  "stylers": [
+                                                            {
+                                                                        "visibility": "off"
+                                                                                  }
+                          ]
+                                },
+                                  {
+                                          "featureType": "poi.sports_complex",
+                                                  "stylers": [
+                                                            {
+                                                                        "visibility": "off"
+                                                                                  }
+                          ]
+                                },
+                                  {
+                                          "featureType": "road",
+                                                  "elementType": "geometry",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#ffffff"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "road",
+                                                  "elementType": "geometry.fill",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#726246"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "road",
+                                                  "elementType": "labels.text",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#ffffff"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "road.arterial",
+                                                  "elementType": "geometry.fill",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#b03841"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "road.arterial",
+                                                  "elementType": "labels.text.fill",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#726246"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "road.highway",
+                                                  "elementType": "geometry",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#dadada"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "road.highway",
+                                                  "elementType": "labels.text.fill",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#616161"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "road.local",
+                                                  "elementType": "geometry.fill",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#726246"
+                                                                                      },
+                                                                                            {
+                                                                                                        "lightness": 25
+                                                                                                                  }
+                          ]
+                                },
+                                  {
+                                          "featureType": "road.local",
+                                                  "elementType": "labels.text.fill",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#b03841"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "water",
+                                                  "elementType": "geometry",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#c9c9c9"
+                                                                                      }
+                          ]
+                                },
+                                  {
+                                          "featureType": "water",
+                                                  "elementType": "labels.text.fill",
+                                                      "stylers": [
+                                                                {
+                                                                            "color": "#444444"
+                                                                                      }
+                          ]
+                                }
+                      ]
+                  });
+        var marker = new google.maps.Marker({
+                      position: mari,
+                      map: map
+                  });
+        }
+
+
 	jQuery(function($) {
 
         function hideModal(){
@@ -134,5 +385,9 @@
             });
 	});
 });
-	</script>
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfJPMI9TtrxVQnTnE-wKG4qj24q3Uv2y0&language=ru&callback=initMap">
+    </script>
+
 </html>
