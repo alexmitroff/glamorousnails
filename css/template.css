@@ -272,11 +272,6 @@ label[for=mobile-menu-toggle]{
 .promo .container p,
 .promo .container h3{background-color:rgba(255,255,255,.5);}
 
-
-.promo img{
-	width:100%;
-	}
-
 .slide div{
 	padding:4rem 2rem 6rem 2rem;
 	width:100%;
@@ -302,8 +297,11 @@ label[for=mobile-menu-toggle]{
 	padding-bottom:4rem;	
 }
 
+.logo-mid,
 .insta img{
 	width:6rem;
+    display:block;
+    margin:0 auto;
 }
 
 .insta h3,
@@ -665,6 +663,47 @@ footer + div{
     width:100vw;
 }
 
+.emails,
+.contacts {
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    align-items:center;
+}
+
+.contacts{
+    margin-bottom:2rem;
+}
+
+.contacts .info{
+    order: 1;
+}
+
+.contacts .info > ul {
+    list-style: none;
+}
+
+.contacts .info > ul > li:first-child{
+    color:#e5c48c;
+    text-transform:uppercase;
+}
+
+.contacts .info > ul > li{
+    padding:1rem 0;
+}
+
+#map{
+    width:100%;
+    height: 60vh;
+    background-color:#ccc;
+    order:0;
+}
+
+.emails div {
+    padding:1rem 0;
+    text-align:center;
+}
+
 @media ( min-width:560px ) and ( max-width:767px ) {
 	.promo .container{padding-right:20rem;padding-top:4rem;}
 	.promo .container p,
@@ -687,6 +726,10 @@ footer + div{
     .service > a{width:24%;}
     .modal-container{width:768px; margin: 0 auto 0 auto;}
     .service-panel > div{width:49%;}
+    .emails, .contacts{flex-direction:row;}
+    .emails div, .contacts .info{width:50%;}
+    .contacts .info ul{display:block; margin:0 auto; width:50%;}
+    #map{width:50%;order:2}
 	}
 
 @media ( min-width:768px ) and ( max-width:991px ) {
@@ -733,3 +776,12 @@ footer + div{
 	}
 
 .customheading{display:none;}
+
+.text-center{text-align:center;}
+
+.attention{
+    text-align:center;
+    font-size:2rem;
+    color:#B03841;
+    margin-bottom:2rem;
+}
