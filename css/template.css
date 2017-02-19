@@ -105,7 +105,7 @@ h2[itemprop=headline]{
 	list-style-type:none;
 	color:#d3b581; /* GOLD color */ 
 	text-align:right;
-	padding:2rem;
+	padding:3rem;
 }
 
 .header-contacts li{
@@ -259,11 +259,16 @@ label[for=mobile-menu-toggle]{
 	width:100%;
 }
 
+.salon{
+    margin-top:2rem;
+}
+
+.salon-item,
 .special,
 .promo-item {
 	overflow:hidden;
 	width: 100%;
-	height:55rem;
+    height:80vh;
 	background-position: center center;
 	background-size: cover;
 	background-repeat:no-repeat;
@@ -336,10 +341,13 @@ footer p,
 
 .special-body h3,
 .promo h3{
-	padding:2rem;
-	font-size:4rem;
-	font-weight: lighter;
-	color:#444;
+	padding:3rem 2rem 1rem 2rem;
+	font-size:5rem;
+	font-weight: normal;
+}
+
+.special-body h3{
+    color: #d3b581;
 }
 
 .special-body p,
@@ -694,19 +702,19 @@ footer + div{
 
 .contacts .info{
     order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.contacts .info > ul {
-    list-style: none;
+.contacts .info p {
+    margin-top:1rem;;
 }
 
-.contacts .info > ul > li:first-child{
+.contacts .info h3{
     color:#e5c48c;
-    text-transform:uppercase;
-}
-
-.contacts .info > ul > li{
-    padding:1rem 0;
+    margin-top:2rem;
 }
 
 #map{
@@ -736,7 +744,8 @@ footer + div{
 	label[for=mobile-menu-toggle]{display:none;}
 	.menu li.active {background-color:white;}
 	.menu li.active a {color:#d3b581;}
-	.promo .container > *{width:50%}
+	.promo .container > *{width:60%}
+    .promo p{font-size:3rem;}
 	.header-contacts{background-image:url('/images/logo-mini.png');	background-position: 3rem center;background-size: 6rem;	background-repeat:no-repeat;}
 	.special-body{width:50%;}
 	.portfolio-item-image {width:54rem; padding-top:0; height:54rem;}
@@ -747,6 +756,7 @@ footer + div{
     .emails div, .contacts .info{width:50%;}
     .contacts .info ul{display:block; margin:0 auto; width:50%;}
     #map{width:50%;order:2}
+    .salon-item{height:50vh;}
 	}
 
 @media ( min-width:768px ) and ( max-width:991px ) {
@@ -759,7 +769,6 @@ footer + div{
 	#jnews_module2{margin-top:0;}
 	.TzModFeature_service li{width:48%;}
 	footer section{width: 33%}
-	.promo-item{height:50rem;}
 	.slick-dots{margin-top:-12rem;}
 	}
 
@@ -773,7 +782,6 @@ footer + div{
 	#jnews_module2{margin-top:0;}
 	.TzModFeature_service li{width:24%;}
 	footer section{width: 33%}
-	.promo-item{height:80rem;}
 	.slick-dots{margin-top:-17rem;}
 	}
 
@@ -788,7 +796,6 @@ footer + div{
 	#jnews_module2{margin-top:0;}
 	.TzModFeature_service li {width:24%;}
 	footer section{width: 33%}
-	.promo-item{height:80rem;}
 	.slick-dots{margin-top:-17rem;}
 	}
 

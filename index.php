@@ -35,7 +35,7 @@
 			<div class="container">
 				<section class="sub">
 					<h3>Подпишитесь на&nbsp;новости</h3>
-					<p>и&nbsp;получайте информацию о&nbsp;наших акциях и&nbsp;специальных предложениях</p>
+					<p>Получайте информацию о&nbsp;наших акциях и&nbsp;специальных предложениях</p>
 					<jdoc:include type="modules" name="footer-subcribe" />
 				</section>
 				<section class="copyright">
@@ -321,6 +321,12 @@
             $('.promo').slick({
 				autoplay: true,
 				arrows:false,
+				dots:true,
+			});
+            
+            $('.salon').slick({
+				autoplay: true,
+				arrows:true,
 				dots:true,
 			});
 
