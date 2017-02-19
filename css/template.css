@@ -272,7 +272,10 @@ label[for=mobile-menu-toggle]{
 .promo .container{
 	background:none;
 	margin:0 auto 0 auto;
-	padding:4rem 4rem 4rem 4rem;
+	padding:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 	}
 
 .promo .container p,
@@ -733,7 +736,7 @@ footer + div{
 	label[for=mobile-menu-toggle]{display:none;}
 	.menu li.active {background-color:white;}
 	.menu li.active a {color:#d3b581;}
-	.promo .container{padding-right:40rem;padding-top:10rem;}
+	.promo .container > *{width:50%}
 	.header-contacts{background-image:url('/images/logo-mini.png');	background-position: 3rem center;background-size: 6rem;	background-repeat:no-repeat;}
 	.special-body{width:50%;}
 	.portfolio-item-image {width:54rem; padding-top:0; height:54rem;}
