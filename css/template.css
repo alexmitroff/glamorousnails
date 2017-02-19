@@ -98,6 +98,7 @@ footer section {
 h2[itemprop=headline]{
     margin-top:1rem;
     margin-bottom:2rem;
+    text-align:center;
 }
 
 .header-contacts{
@@ -625,7 +626,11 @@ input[type=button]:hover{
 }
 
 .service-panel ul li:nth-child(odd){
-    background-color:#eee;
+    background-color:#f6f6f6;
+}
+
+.service-panel ul li span:first-child{
+    padding-right:1rem;
 }
 
 .service-panel ul li span:last-child:after{
